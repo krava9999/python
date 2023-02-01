@@ -5,8 +5,7 @@ box = 0
 num = int(input("Введите трехзначное число:"))
 # если число трех значное в промежутках от -999 до -100 и 100 до 999
 if (num <= 999 and num >= 100):
-    num = str(num)
-    box = int(num[0]) + int(num[1]) + int(num[2])
+    box += int(num[0]) + int(num[1]) + int(num[2])
     print(f'Сумма чисел равна: {box}')
 else:
     print('Число не трех значное')
